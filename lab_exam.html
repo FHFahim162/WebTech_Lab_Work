@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="lab_exam.css" />
+    <script src="lab_exam.js"></script>
+  </head>
+  <body>
+    <script>
+      document.write("<h1>Simple Calculator</h1>");
+    </script>
+
+    <div class="calculator">
+      <input
+        type="text"
+        id="display"
+        name="display"
+        placeholder="0"
+        readonly
+      />
+
+      <div class="button-parent">
+        <button onclick="return pressValue('7');">7</button>
+        <button onclick="return pressValue('8');">8</button>
+        <button onclick="return pressValue('9');">9</button>
+        <button onclick="return pressValue('/');">/</button>
+
+        <button onclick="return pressValue('4');">4</button>
+        <button onclick="return pressValue('5');">5</button>
+        <button onclick="return pressValue('6');">6</button>
+        <button onclick="return pressValue('*');">*</button>
+
+        <button onclick="return pressValue('1');">1</button>
+        <button onclick="return pressValue('2');">2</button>
+        <button onclick="return pressValue('3');">3</button>
+        <button onclick="return pressValue('-');">-</button>
+
+        <button onclick="return pressValue('0');">0</button>
+        <button onclick="return deleteLast();">DEL</button>
+        <button onclick="return calculateResult();">=</button>
+        <button onclick="return pressValue('+');">+</button>
+
+        <button onclick="return clearDisplay();">C</button>
+      </div>
+
+      <p id="calcErr"></p>
+    </div>
+  </body>
+</html>
